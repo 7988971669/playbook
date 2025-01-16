@@ -1,2 +1,2 @@
 {web}
-172.31.39.69    ansible_ssh_user=root ansible_ssh_pass=1234
+172.31.23.217    ansible_ssh_user=root ansible_ssh_pass=1234
