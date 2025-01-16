@@ -1,0 +1,12 @@
+- name: deploying webserver
+  hosts: web
+  gather_facts: false
+  tasks:
+   - name: create the directory /tmp/exam24
+     file:
+      path: /tmp/exam24
+      state: directory
+   - name: copy file /etc/fstab into /tmp/exam24
+     copy:
+      src: /etc/fstab
+      dest: /tmp/exam24
