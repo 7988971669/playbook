@@ -10,3 +10,14 @@
      copy:
       src: /etc/fstab
       dest: /tmp/exam24
+   - name: restart cronde
+     service:
+      name: crond
+      state: restarted
+   - name: installed httpd and vsftpd
+     yum:
+      name:
+       - httpd
+       - samba
+      state: installed
+
